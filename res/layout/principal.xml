@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.zeus.mailsenderapp.Principal" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/btn_escolher_conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="22dp"
+        android:text="@string/escolherconta" />
+
+    <Button
+        android:id="@+id/btn_enviar_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_escolher_conta"
+        android:layout_alignRight="@+id/btn_escolher_conta"
+        android:layout_below="@+id/btn_escolher_conta"
+        android:layout_marginTop="15dp"
+        android:text="@string/enviar_email" />
+
+    <Button
+        android:id="@+id/btn_salvar_arquivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_enviar_email"
+        android:layout_alignRight="@+id/btn_enviar_email"
+        android:layout_below="@+id/btn_enviar_email"
+        android:layout_marginTop="26dp"
+        android:text="Salvar Arquivo" />
+
+    <Button
+        android:id="@+id/btn_ler_arquivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_salvar_arquivo"
+        android:layout_alignRight="@+id/btn_salvar_arquivo"
+        android:layout_below="@+id/btn_salvar_arquivo"
+        android:layout_marginTop="21dp"
+        android:text="Ler Arquivo" />
+
+    <ImageView
+        android:id="@+id/imgPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="93dp"
+        android:src="@drawable/abc_btn_radio_material" />
+
+</RelativeLayout>
